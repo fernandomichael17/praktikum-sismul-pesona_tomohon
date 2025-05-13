@@ -1,0 +1,1 @@
+# praktikum-sismul-pesona_tomohon
