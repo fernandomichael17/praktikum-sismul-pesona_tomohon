@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Tomohon</title>
+    <link rel="icon" href="assets/img/logotomohon-300x290.png" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio id="backgroundMusic" autoplay loop>
+      <source src="assets/audio/90sFlav - Ｃａｌｌ ｍｅ.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Control panel untuk mengontrol audio -->
+    <div class="audio-controls">
+      <span>Musik Latar: </span>
+      <button onclick="toggleMusic()" id="musicToggle">Pause</button>
+    </div>
+
+    <header>
+      <div class="jumbotron">
+        <h1>Pesona <span class="moving-text">Tomohon</span></h1>
+        <p class="fade-in" style="animation-delay: 0.5s">
+          Kota Bunga yang menjadi daerah penghasil bunga terbesar di Indonesia.
+        </p>
+        <div class="running-text-container">
+          <div class="running-text-content">
+            Selamat datang di website Pesona Kota Tomohon, Sulawesi Utara
+          </div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#deskripsi">Deskripsi</a>
+          </li>
+          <li>
+            <a href="#sejarah">Sejarah</a>
+          </li>
+          <li>
+            <a href="#geografis">Geografis</a>
+          </li>
+          <li>
+            <a href="#wisata">Wisata</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article
+          id="deskripsi"
+          ,
+          class="card fade-in"
+          style="animation-delay: 0.2s"
+        >
+          <h2>Deskripsi</h2>
+          <video
+            class="featured-image"
+            controls
+            style="width: 100%; max-height: 400px"
+          >
+            <source
+              src="assets/video/Pesona Indonesia _ Manado.mp4"
+              type="video/mp4"
+            />
+            Browser Anda tidak mendukung tag video.
+          </video>
+          <p>
+            Kota Tomohon adalah kota di provinsi Sulawesi Utara, Indonesia, yang
+            merupakan enklave dari Kabupaten Minahasa. Sebelum tahun 2003,
+            Tomohon merupakan salah satu kecamatan di Kabupaten Minahasa. Dalam
+            perkembangannya, Tomohon mengalami kemajuan, sehingga ada aspirasi
+            dari warga Tomohon untuk meningkatkan status Tomohon menjadi sebuah
+            kota.
+          </p>
+        </article>
+        <article
+          id="sejarah"
+          class="card fade-in"
+          style="animation-delay: 0.4s"
+        >
+          <h2>Sejarah</h2>
+          <img
+            src="assets/img/sejarah.jpg"
+            alt="sejarah"
+            class="featured-image"
+          />
+          <p>
+            Tomohon sejak dahulu telah dituliskan dalam beberapa catatan
+            sejarah. Salah satunya terdapat dalam karya etnografis Pendeta N.
+            Graafland yang ketika pada tanggal 14 Januari 1864 di atas kapal
+            Queen Elisabeth, ia menuliskan tentang suatu negeri yang bernama
+            Tomohon yang dikunjunginya pada sekitar tahun 1850.
+          </p>
+          <p>
+            Menurut beberapa sumber, Tomohon asal kata (Tou mu'ung) dalam bahasa
+            tombulu. Dikatakan bahwa Tomohon adalah salah satu daerah yang
+            termasuk dalam etnis tombulu, ialah salah satu dari delapan etnis
+            asli minahasa. Perkembangan peradaban dan dinamika penyelenggaraan
+            pembangunan dan kemasyarakatan dari tahun ke tahun menjadikan
+            Tomohon sebagai salah satu ibu kota kecamatan di Kabupaten Minahasa.
+          </p>
+        </article>
+        <article
+          id="geografis"
+          class="card fade-in"
+          style="animation-delay: 0.6s"
+        >
+          <h2>Geografis</h2>
+          <img
+            src="assets/img/geografis.jpg"
+            alt="geografis"
+            ,
+            class="featured-image"
+          />
+          <p>
+            Kota Tomohon terletak di ketinggian kira-kira 900-1100 meterdari
+            permukaan laut (dpl), diapit oleh 2 gunung berapi aktif, yaitu
+            Gunung Lokon (1.580 m) dan Gunung Mahawu (1.311 m). Suhu di Kota
+            Tomohon pada waktu siang mampu mencapai 30 derajat Celsius dan 18-22
+            derajat Celsius pada malam hari.
+          </p>
+        </article>
+        <article id="wisata" class="card fade-in" style="animation-delay: 0.8s">
+          <h2 class="blink">Wisata</h2>
+          <section>
+            <h3>Gunung Lokon</h3>
+            <img
+              src="assets/img/lokon.jpg"
+              alt="lokon"
+              class="featured-image"
+            />
+            <p>
+              Terletak di sebelah barat laut Kota Tomohon dengan ketinggian
+              1.580 meter. Gunung berapi ini luar biasa aktif. Menyajikan
+              panorama pegunungan dengan kawah yang begitu indah. Waktu yang
+              tepat untuk memulai perjalanan dari Kakaskasen, Tomohon adalah
+              sekitar jam 7 pagi, dan dapat tiba di kawah pada saat udara pagi
+              masih sejuk.
+            </p>
+          </section>
+          <section>
+            <h3>Danau Linouw</h3>
+            <img
+              src="assets/img/linow.jpeg"
+              alt="danau linow"
+              class="featured-image"
+            />
+            <p>
+              Danau kecil yang berjarak 8,5 KM dari pusat kota ini unik karena
+              mengandung kadar belerang yang tinggi. Memiliki warna yang selalu
+              berubah tergantung pada sudut pandang dan pencahayaan danau. Di
+              sekitar danau ini terdapat satwa endemik berupa burung blibis dan
+              serangga yang oleh penduduk setempat dinamakan "sayok" atau
+              "komo". Serangga unik yang hidup di air tetapi bersayap dan bisa
+              terbang ini menjadi konsumsi penduduk setempat. Kadang-kadang
+              terdengar kicauan burung burung kecil dan burung putih besar yang
+              melintasi danau.
+            </p>
+          </section>
+          <section>
+            <h3>Hutan Pinus Wisata di Lahendong</h3>
+            <img
+              src="assets/img/Hutan_Pinus_Lahendong.jpg"
+              alt="hutan pinus"
+              class="featured-image"
+            />
+            <p>
+              Kawasan hutan pinus yang mengitari hamparan kolam. Yang
+              dikelilingi sumber mata air panas alami bercampur dengan lumpur
+              belerang dan tempat pemandian air panas alami. Ini merupakan
+              tempat yang ideal untuk mengusir kepenatan di kala senja. Kawasan
+              ini menjajakan berbagai kudapan khas Kota Tomohon seperti pisang
+              goreng, jagung rebus disajikan dengan sambal atau dabu-dabu.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card fade-in" style="animation-delay: 1s">
+          <header>
+            <h2 class="moving-text">Lambang</h2>
+            <p><span class="highlight">Kota Bunga</span></p>
+            <figure>
+              <img src="assets/img/logotomohon-300x290.png" alt="logo" />
+              <figcaption>Lambang Daerah</figcaption>
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi lebih lanjut</h3>
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Hari Jadi</th>
+                <td>25 September 1810</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>167.67 km <sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 22</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Fernando Michael Hebert Siregar &#169; 2025, Sistem Multimedia</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var music = document.getElementById("backgroundMusic");
+
+        music.play().catch(function (error) {
+          console.log("Autoplay diblokir oleh browser: " + error);
+          document.getElementById("musicToggle").textContent = "Play";
+        });
+      });
+
+      function toggleMusic() {
+        var music = document.getElementById("backgroundMusic");
+        var toggle = document.getElementById("musicToggle");
+
+        if (music.paused) {
+          music.play();
+          toggle.textContent = "Pause";
+        } else {
+          music.pause();
+          toggle.textContent = "Play";
+        }
+      }
+    </script>
+  </body>
+</html>

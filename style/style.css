@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #705c53;
+  transition: color 0.3s ease;
+}
+
+h2:hover,
+h3:hover {
+  color: #a66e38;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #705c53;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #d8d2c2;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(53, 43, 43);
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  font-weight: bold;
+  background-color: #a66e38;
+  color: white;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.featured-image:hover {
+  transform: scale(1.02);
+}
+
+.profile img {
+  max-width: 200px;
+  transition: transform 0.5s ease;
+}
+
+.profile img:hover {
+  transform: rotate(5deg);
+}
+
+.card {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.jumbotron {
+  font-size: 25px;
+  padding: 60px;
+  background-color: #eddfe0;
+  text-align: center;
+  color: rgb(38, 41, 52);
+  position: relative;
+  overflow: hidden;
+}
+
+.moving-text {
+  display: inline-block;
+  animation: colorChange 5s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #705c53;
+  }
+  25% {
+    color: #a66e38;
+  }
+  50% {
+    color: #5c8374;
+  }
+  75% {
+    color: #9e7676;
+  }
+  100% {
+    color: #6d2932;
+  }
+}
+
+/* Efek highlight untuk teks */
+.highlight {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 215, 0, 0.2) 0%,
+    rgba(255, 215, 0, 0.3) 50%,
+    rgba(255, 215, 0, 0.2) 100%
+  );
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+/* Efek blink untuk judul wisata */
+.blink {
+  animation: blink-animation 1.5s infinite;
+}
+
+@keyframes blink-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.glow-text {
+  text-shadow: 0 0 5px rgba(166, 110, 56, 0.5), 0 0 10px rgba(166, 110, 56, 0.3);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.running-text-container {
+  background-color: #705c53;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+}
+
+.running-text-content {
+  position: absolute;
+  white-space: nowrap;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  animation: runningText 15s linear infinite;
+}
+
+@keyframes runningText {
+  0% {
+    left: 100%; /* Mulai dari kanan */
+  }
+  100% {
+    left: -100%; /* Berakhir di luar container sebelah kiri */
+  }
+}
+
+/* Penyesuaian untuk gaya tabel di aside */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+table tr:hover {
+  background-color: rgba(237, 223, 224, 0.3);
+}
+
+.audio-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.audio-controls button {
+  margin-left: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.audio-controls button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
